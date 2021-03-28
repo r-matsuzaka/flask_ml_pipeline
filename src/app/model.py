@@ -5,7 +5,7 @@ import pandas as pd
 from sklearn.tree import DecisionTreeRegressor
 
 # Read data
-df = pd.read_csv("data/50_Startups.csv")
+df = pd.read_csv("../../data/50_Startups.csv")
 
 # Prepare feature and label
 df = pd.get_dummies(df, columns=["State"])
