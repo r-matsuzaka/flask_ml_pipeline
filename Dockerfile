@@ -19,3 +19,7 @@ COPY --from=builder /usr/src/app/requirements.txt .
 RUN pip install -r requirements.txt
 
 COPY . .
+
+RUN cd src/app/
+
+CMD ["python", "app.py"]
